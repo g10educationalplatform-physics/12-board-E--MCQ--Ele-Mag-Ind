@@ -363,49 +363,249 @@
 
 const Q = [
   {
-    "id": "q1",
-    "question": "Identify the part of the male reproductive system marked as X in the figure below.",
-    "image": "https://i.ibb.co/example/male-reproductive-system.png",
-    "options": {
-      "A": "Testis",
-       "B": "Vas deferens <img src='https://i.ibb.co/example/vas.png' style='max-height:40px;'>",
-      "C": "Seminal vesicle",
-      "D": "Ureter"
-    },
-    "answer": "B",
-    "solution": "The part marked as X is vas deferens.<br><img src='https://i.ibb.co/example/vas-solution.png' style='max-width:220px;'>",
-   "solution_steps": [
-      "Step 1: Rate refers to speed of chemical change.",
-      "Step 2: It can be expressed as $\\Delta [\\text{Reactant or Product}] / \\Delta t$.",
-      "Step 3: This measures how fast reactants are consumed or products formed."
-    ]
-  },
-{
-    "id": "q2",
-    "text": "Which of the following quantities changes when a force is applied on a body?",
-    "options": ["Mass", "Momentum", "Density", "Temperature"],
-    "correct": "B",
-    "solution": "Force changes the momentum of a body according to Newton’s Second Law: $$\\vec{F} = \\frac{d\\vec{p}}{dt}$$."
-  },
-  {
-    "id": "q3",
-    "text": "Which plot confirms first-order kinetics in the integration method?",
+    "id": "SIMI01",
+    "text": "A coil produces a magnetic flux of 40 mWb when a current of 2 A flows through it. What is its self-inductance?",
     "options": [
-      "$[A]$ vs $t$ (straight line)",
-      "$\\ln[A]$ vs $t$ (straight line)",
-      "$1/[A]$ vs $t$ (straight line)",
-      "$t_{1/2}$ vs $[A]_0$"
+      "20 mH",
+      "2 × 10^-2 H",
+      "40 H",
+      "0.4 H"
     ],
     "correct": "B",
-    "solution": "For first-order, $\\ln[A]$ vs $t$ gives a straight line with slope $-k$.",
+    "solution": "Self-inductance L = flux / current.",
     "solution_steps": [
-      "Step 1: Integrated equation: $\\ln[A] = -kt + \\ln[A]_0$.",
-      "Step 2: Plotting $\\ln[A]$ vs $t$ gives linear graph.",
-      "Step 3: Slope = $-k$, intercept = $\\ln[A]_0$.",
-      "Graph:\n y = ln[A]\n |\\\n | \\\n |  \\\n |   \\\n |    \\\n +--------- t"
+      "L = ϕ / I",
+      "L = (40 × 10^-3) / 2 = 2 × 10^-2 H"
+    ]
+  },
+  {
+    "id": "SIMI02",
+    "text": "A 200-turn coil of self-inductance 20 mH carries 4 mA. What is the magnetic flux linked with each turn?",
+    "options": [
+      "4 × 10^-7 Wb",
+      "2 × 10^-4 Wb",
+      "8 × 10^-3 Wb",
+      "1 × 10^-6 Wb"
+    ],
+    "correct": "A",
+    "solution": "Flux per turn ϕ = LI / N",
+    "solution_steps": [
+      "ϕ = (20 × 10^-3 × 4 × 10^-3) / 200",
+      "ϕ = 4 × 10^-7 Wb"
+    ]
+  },
+  {
+    "id": "SIMI03",
+    "text": "A solenoid has a rate of change of current of 4 A/s producing an emf of 20 mV. What is its self-inductance?",
+    "options": [
+      "5 mH",
+      "20 H",
+      "0.5 H",
+      "10 mH"
+    ],
+    "correct": "A",
+    "solution": "L = |ε| / (dI/dt)",
+    "solution_steps": [
+      "L = (20 × 10^-3) / 4",
+      "L = 5 × 10^-3 H = 5 mH"
+    ]
+  },
+  {
+    "id": "SIMI04",
+    "text": "A 12 V battery is connected to a 6 Ω, 10 H coil. The switch is suddenly opened in 1 ms. What is the average induced emf across the coil?",
+    "options": [
+      "20 V",
+      "2 × 10^4 V",
+      "1 × 10^3 V",
+      "120 V"
+    ],
+    "correct": "B",
+    "solution": "Use ε = -L dI/dt with dI = final - initial current.",
+    "solution_steps": [
+      "Steady current I = 12/6 = 2 A",
+      "dI/dt = (0 - 2) / 1×10^-3 = -2×10^3 A/s",
+      "ε = -10 × (-2×10^3) = 2 × 10^4 V"
+    ]
+  },
+  {
+    "id": "SIMI05",
+    "text": "An inductor of 5 H carries 2 A. How quickly must current reduce to produce 50 V self-induced emf?",
+    "options": [
+      "0.2 s",
+      "0.1 s",
+      "1 s",
+      "0.5 s"
+    ],
+    "correct": "A",
+    "solution": "ε = -L dI/dt ⇒ solve for t",
+    "solution_steps": [
+      "ε = -L dI/dt ⇒ 50 = -5 × (-2)/t",
+      "t = 0.2 s"
+    ]
+  },
+  {
+    "id": "SIMI06",
+    "text": "What is the self-inductance of an air-core solenoid 50 cm long, 2 cm radius, 500 turns?",
+    "options": [
+      "7.89 × 10^-4 H",
+      "0.5 H",
+      "1 H",
+      "5 × 10^-3 H"
+    ],
+    "correct": "A",
+    "solution": "L = μ0 N^2 A / l",
+    "solution_steps": [
+      "A = π r^2 = π × (0.02)^2",
+      "L = (4π × 10^-7 × 500^2 × π × 0.02^2)/0.5",
+      "L ≈ 7.89 × 10^-4 H"
+    ]
+  },
+  {
+    "id": "SIMI07",
+    "text": "An air-cored solenoid of length 30 cm, cross-section 25 cm², 500 turns carries 2.5 A. Current is switched off in 10^-3 s. What is average back emf?",
+    "options": [
+      "6.542 V",
+      "0.5 V",
+      "2 V",
+      "10 V"
+    ],
+    "correct": "A",
+    "solution": "ε = -L dI/dt",
+    "solution_steps": [
+      "L = μ0 N^2 A / l = 4π×10^-7 × 500^2 × 25×10^-4 / 0.3",
+      "dI/dt = -2.5 / 10^-3",
+      "ε ≈ 6.542 V"
+    ]
+  },
+  {
+    "id": "SIMI08",
+    "text": "A large coil (radius R) and small coil (radius r) have mutual inductance 1 mH. What is flux linked with large coil when 0.5 A flows through small coil?",
+    "options": [
+      "5 × 10^-4 Wb",
+      "1 × 10^-3 Wb",
+      "0.5 Wb",
+      "2 × 10^-4 Wb"
+    ],
+    "correct": "A",
+    "solution": "Flux ϕ = M I",
+    "solution_steps": [
+      "ϕ = 1×10^-3 × 0.5 = 5×10^-4 Wb"
+    ]
+  },
+  {
+    "id": "SIMI09",
+    "text": "A current change of 6 A in a coil causes flux change of 12×10^-4 Wb per turn in a 2000-turn coil. Find the mutual inductance.",
+    "options": [
+      "0.4 H",
+      "0.06 H",
+      "2 H",
+      "1 H"
+    ],
+    "correct": "A",
+    "solution": "M = total flux / current",
+    "solution_steps": [
+      "Total flux ϕ = 2000 × 12×10^-4 = 2.4 Wb",
+      "M = ϕ / I = 2.4 / 6 = 0.4 H"
+    ]
+  },
+  {
+    "id": "SIMI10",
+    "text": "An emf of 0.5 V is developed in a secondary coil when current in primary changes from 5 A to 2 A in 0.3 s. Find the mutual inductance.",
+    "options": [
+      "0.05 H",
+      "0.5 H",
+      "0.005 H",
+      "0.1 H"
+    ],
+    "correct": "A",
+    "solution": "ε = -M dI/dt ⇒ solve for M",
+    "solution_steps": [
+      "dI = 2 - 5 = -3 A, dt = 0.3 s",
+      "0.5 = -M × (-3) / 0.3 ⇒ M = 0.05 H"
+    ]
+  },
+  {
+    "id": "SIMI11",
+    "text": "Primary current changes from 5 A to 1 A in 0.02 s. If mutual inductance is 0.5 H, find (i) induced emf in secondary and (ii) flux change per turn if secondary has 200 turns.",
+    "options": [
+      "100 V, -0.01 Wb",
+      "50 V, 0.01 Wb",
+      "200 V, -0.02 Wb",
+      "10 V, 0.001 Wb"
+    ],
+    "correct": "A",
+    "solution": "Use ε = -M dI/dt and ϕ = -ε dt / N",
+    "solution_steps": [
+      "ε = -0.5 × (1-5)/0.02 = 100 V",
+      "dϕ = -ε dt / N = -100 × 0.02 / 200 = -0.01 Wb"
+    ]
+  },
+  {
+    "id": "SIMI12",
+    "text": "A solenoid 50 cm long, 2 cm radius, 500 turns has another wire of 50 turns wound near the centre. Calculate (i) mutual inductance and (ii) induced emf when primary current changes from 0 to 5 A in 0.02 s.",
+    "options": [
+      "78.96 μH, -19.74 mV",
+      "50 μH, -25 mV",
+      "100 μH, -10 mV",
+      "25 μH, -5 mV"
+    ],
+    "correct": "A",
+    "solution": "M = μ0 N1 N2 A / l, ε = -M dI/dt",
+    "solution_steps": [
+      "M = 4π×10^-7 × 500 × 50 × π × 0.02^2 / 0.5 = 78.96 μH",
+      "ε = -78.96×10^-6 × (5-0)/0.02 = -19.74 mV"
+    ]
+  },
+  {
+    "id": "SIMI13",
+    "text": "A solenoid has 50 turns/cm and cross-section 4×10^-4 m². Another wire of 200 turns is wound coaxially. Find mutual inductance.",
+    "options": [
+      "5.027 × 10^-4 H",
+      "1 × 10^-3 H",
+      "2 × 10^-4 H",
+      "1 H"
+    ],
+    "correct": "A",
+    "solution": "M = μ0 n1 n2 l A",
+    "solution_steps": [
+      "n1 = 50/cm = 5000/m, n2 l = 200 turns, A = 4×10^-4 m²",
+      "M = 4π×10^-7 × 5000 × 200 × 4×10^-4 ≈ 5.027 ×10^-4 H"
+    ]
+  },
+  {
+    "id": "SIMI14",
+    "text": "Outer solenoid: 20 turns/cm, 40 cm²; Inner solenoid: 25 turns/cm, 25 cm², both 50 cm long. Find mutual inductance.",
+    "options": [
+      "7.85 mH",
+      "5 mH",
+      "10 mH",
+      "15 mH"
+    ],
+    "correct": "A",
+    "solution": "M = μ0 N1 N2 A2 / l",
+    "solution_steps": [
+      "N1 = 20×50 =1000, N2 = 25×50=1250, A2 = 25×10^-4 m²",
+      "M = 4π×10^-7 ×1000×1250×25×10^-4 / 0.5 ≈ 7.85×10^-3 H = 7.85 mH"
+    ]
+  },
+  {
+    "id": "SIMI15",
+    "text": "Three inductors connected as shown: L2=0.5 H, L3=0.5 H in parallel, L1=0.75 H in series with combination. Find equivalent inductance.",
+    "options": [
+      "1 H",
+      "0.5 H",
+      "1.25 H",
+      "0.75 H"
+    ],
+    "correct": "A",
+    "solution": "Combine L2 and L3 in parallel, then add L1 in series",
+    "solution_steps": [
+      "1/L' = 1/0.5 + 1/0.5 = 4 ⇒ L' = 0.25 H",
+      "L_eq = L1 + L' = 0.75 + 0.25 = 1 H"
     ]
   }
 ]
+
 ;
 
 
@@ -723,3 +923,4 @@ sendReport.onclick = () => {
 
 </body>
 </html>
+
