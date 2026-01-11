@@ -551,8 +551,128 @@ const Q = [
       "ε = −A dB/dt = −2.25 × 10⁻² V",
       "I = ε / R = −2.7 mA"
     ]
+  },
+  {
+    "id": "MF06",
+    "text": "A circular coil of diameter 0.02 m is placed perpendicular to a magnetic field which changes from 6000 T to 1000 T in 4 s. If induced emf is 11 V, find the number of turns in the coil.",
+    "options": [
+      "14",
+      "20",
+      "28",
+      "56"
+    ],
+    "correct": "C",
+    "solution": "Number of turns is obtained using Faraday’s law of electromagnetic induction.",
+    "solution_steps": [
+      "Radius \\( r = 0.01 \\text{ m} \\)",
+      "Area \\( A = \\pi r^2 = \\pi \\times (0.01)^2 \\)",
+      "Change in magnetic field \\( \\Delta B = 6000 - 1000 = 5000 \\text{ T} \\)",
+      "Using \\( \\varepsilon = N A \\dfrac{\\Delta B}{\\Delta t} \\)",
+      "\\( 11 = N \\times \\pi (0.01)^2 \\times \\dfrac{5000}{4} \\)",
+      "Solving gives \\( N = 28 \\)"
+    ]
+  },
+  {
+    "id": "MF07",
+    "text": "A wire of length 88 cm is bent into a circular loop and then reshaped into a square of side 22 cm in 0.5 s. The magnetic field changes from 2.5 T to 3.0 T. Find the induced emf.",
+    "options": [
+      "0.0088 V",
+      "0.012 V",
+      "0.0176 V",
+      "0.025 V"
+    ],
+    "correct": "C",
+    "solution": "Induced emf is calculated from the change in magnetic flux per unit time.",
+    "solution_steps": [
+      "Length of wire \\( = 0.88 \\text{ m} \\)",
+      "Radius of circle \\( r = \\dfrac{0.88}{2\\pi} = 0.14 \\text{ m} \\)",
+      "Initial area \\( A_1 = \\pi r^2 = 0.0616 \\text{ m}^2 \\)",
+      "Final area \\( A_2 = (0.22)^2 = 0.0484 \\text{ m}^2 \\)",
+      "\\( \\varepsilon = \\dfrac{B_2 A_2 - B_1 A_1}{t} \\)",
+      "\\( \\varepsilon = \\dfrac{(3.0 \\times 0.0484) - (2.5 \\times 0.0616)}{0.5} \\)",
+      "\\( \\varepsilon = 0.0176 \\text{ V} \\)"
+    ]
+  },
+  {
+    "id": "MF08",
+    "text": "A coil of area 500 cm² and 1000 turns is rotated through 180° in 0.1 s in a magnetic field of 0.4 gauss. Find the average induced emf.",
+    "options": [
+      "0.02 V",
+      "0.04 V",
+      "0.06 V",
+      "0.08 V"
+    ],
+    "correct": "B",
+    "solution": "Rotation through 180° reverses magnetic flux, doubling the change.",
+    "solution_steps": [
+      "Area \\( A = 500 \\text{ cm}^2 = 5 \\times 10^{-2} \\text{ m}^2 \\)",
+      "Magnetic field \\( B = 0.4 \\text{ gauss} = 4 \\times 10^{-5} \\text{ T} \\)",
+      "Change in flux \\( \\Delta \\phi = 2BA \\)",
+      "\\( \\varepsilon = \\dfrac{2NBA}{t} \\)",
+      "\\( \\varepsilon = \\dfrac{2 \\times 1000 \\times 4 \\times 10^{-5} \\times 5 \\times 10^{-2}}{0.1} \\)",
+      "\\( \\varepsilon = 0.04 \\text{ V} \\)"
+    ]
+  },
+  {
+    "id": "MF09",
+    "text": "A circular coil of radius 10 cm and 500 turns is rotated through 180° in 0.25 s in Earth’s magnetic field of 3.0 × 10⁻⁵ T. Find the induced current if resistance of the coil is 2 Ω.",
+    "options": [
+      "0.95 mA",
+      "1.5 mA",
+      "1.9 mA",
+      "3.8 mA"
+    ],
+    "correct": "C",
+    "solution": "Induced current is obtained by dividing induced emf by resistance.",
+    "solution_steps": [
+      "Radius \\( r = 0.1 \\text{ m} \\)",
+      "Area \\( A = \\pi r^2 = 3.14 \\times 10^{-2} \\text{ m}^2 \\)",
+      "\\( \\varepsilon = \\dfrac{2NBA}{t} \\)",
+      "\\( \\varepsilon = \\dfrac{2 \\times 500 \\times 3.0 \\times 10^{-5} \\times 3.14 \\times 10^{-2}}{0.25} \\)",
+      "\\( \\varepsilon = 3.8 \\times 10^{-3} \\text{ V} \\)",
+      "\\( I = \\dfrac{\\varepsilon}{R} = \\dfrac{3.8 \\times 10^{-3}}{2} = 1.9 \\text{ mA} \\)"
+    ]
+  },
+  {
+    "id": "MF10",
+    "text": "A coil rotates uniformly in a magnetic field completing one rotation in time T. What is the average induced emf during each quarter rotation?",
+    "options": [
+      "BA/T",
+      "2BA/T",
+      "4BA/T",
+      "Zero"
+    ],
+    "correct": "C",
+    "solution": "Average induced emf depends on change in flux during the interval.",
+    "solution_steps": [
+      "Flux change in each quarter rotation \\( = BA \\)",
+      "Time for quarter rotation \\( = T/4 \\)",
+      "\\( \\varepsilon = \\dfrac{BA}{T/4} \\)",
+      "\\( \\varepsilon = \\dfrac{4BA}{T} \\)"
+    ]
+  },
+  {
+    "id": "MF11",
+    "text": "A circular loop of radius 12 cm and resistance 8.5 Ω experiences a time-varying magnetic field perpendicular to its plane. For 0–2 s, the field increases uniformly from 0 to 1 T. Find the induced current.",
+    "options": [
+      "−1.3 mA",
+      "−2.7 mA",
+      "0 mA",
+      "+2.7 mA"
+    ],
+    "correct": "B",
+    "solution": "Induced current is calculated using Faraday’s law and Ohm’s law.",
+    "solution_steps": [
+      "Radius \\( r = 0.12 \\text{ m} \\)",
+      "Area \\( A = \\pi r^2 = 4.5 \\times 10^{-2} \\text{ m}^2 \\)",
+      "\\( \\dfrac{dB}{dt} = \\dfrac{1 - 0}{2} = 0.5 \\text{ T s}^{-1} \\)",
+      "\\( \\varepsilon = -A \\dfrac{dB}{dt} = -2.25 \\times 10^{-2} \\text{ V} \\)",
+      "\\( I = \\dfrac{\\varepsilon}{R} = \\dfrac{-2.25 \\times 10^{-2}}{8.5} \\)",
+      "\\( I = -2.7 \\text{ mA} \\)"
+    ]
   }
 ]
+
 
 
 
